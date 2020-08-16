@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            /* border: solid; */
+            width:100vw;
+            padding: 15px;
+            margin: 0px auto;
+        }
+        .header{
+            background-color: rgb(189, 182, 182);
+            height: 70px;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .navbar{
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+      }
+      .navbar li{
+        list-style: none;
+        display: inline-block;
+      }    
+      .navbar li a{
+        text-decoration: none; 
+        color: white;
+        display: block;
+        padding: 10px 30px;
+        text-align: center;
+        font-family: sans-serif,Arial, Helvetica;
+      }
+      .navbar li a:hover{
+        background-color: white;
+        color: black;
+        transition:0.5s;
+      }
+
+        .banner{
+            background-color: lightskyblue;
+            height: 100vh;
+            color: white;
+            font-size: 40px;
+
+            position: relative;
+            display: flex;
+           
+            margin-bottom: 15px;
+        }
+        .banner img{
+            margin: 0px auto;
+            width: 100%;
+            height: 100%;
+        }
+        .banner h2{
+            position: absolute;
+            margin:10px 20px;
+            color: lightgray;
+        }
+        
+        .section1{
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            
+        }
+        /* .section1:after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        .circles{
+            background-color: rgb(238, 238, 9);
+            margin: 15px 30px;
+            width:266px;
+            height: 266px;
+            border-radius: 50%;
+            border: 1px solid;
+            /* float: left; */
+        }
+        .section2{
+            /* border: solid green; */
+            margin: 20px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .left{
+            background-color: grey;
+            width: 49%;
+            height: 600px;
+            font-size: 30px;
+            color: white;
+           
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+
+        }
+        .right{ background-color:white;
+        width: 48%;
+        height: 600px;
+        margin-left: 30px;
+        }
+        #article{
+            position: relative;
+            margin: 0px 20px 20px 25px;
+            width:100%;
+            height: 184px;
+            background-color:rgb(241, 101, 50);
+            font-size: 40px;
+            color:black;
+            overflow: hidden;
+            border: 1px solid;
+            /* display: flex; */
+       }
+
+       #article h3{
+           position: absolute;    
+           text-align: left;
+
+       }
+
+       .overlap {
+       
+        font-size: 40px;
+        position: absolute;
+        z-index: 1;
+        left: 290px;
+        top: 0px;
+
+      }
+        .section3{
+            /* padding: 20px; */
+            /* border: solid ; */
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+           
+            width: 300px;
+            height: 340px;
+            border-radius: 10px;
+            background-color: rgba(168, 164, 164, 0.671);
+            margin: 20px 20px;
+            
+        }
+
+        .box img{
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .box h3{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+        .box p{
+             text-align:left;
+             margin: 5px;
+        }
+        .box .button a{
+            /* width: 100%;
+            background-color: rgba(223, 64, 64, 0.822);
+            border-radius: 8px;
+            margin: 10px 10px; */
+
+        background-color: rgb(241, 94, 26);
+        display: block;
+
+        text-decoration: none;
+        color: white;
+        border-radius: 8px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+        }
+
+        .footer{
+            background-color: plum;
+            height: auto;
+            color: white;
+            font-size: 15px;
+            /* display: flex; */
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="top">
+            <ul class = "navbar">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#technologies">TECHNOLOGS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+        </div>
+        <div class="banner" id="home">
+            <img src="./assets/m.jpg" alt="">
+            <h2>PRACTICAL-8</h2>
+        </div>
+        <p  id="team" style="font-size: 40px; text-align: center;">Team Members</p>
+        <div class="section1"> 
+            <div class="circles">
+                <img src="./assets/1.png" style="width: 100%; height: auto; border-radius: 50%;" alt="">
+            </div>
+            <div class="circles">
+                <img src="./assets/2.png" style="width: 100%; border-radius: 50%;" alt="">
+            </div>
+            <div class="circles">
+                <img src="./assets/3.png" style="width: 100%; border-radius: 50%;" alt="">
+            </div>
+            <div class="circles">
+                <img src="./assets/4.png" style="width: 100%; border-radius: 50%;" alt="">
+            </div>
+        </div>
+        <p  id="about" style="font-size: 40px; text-align: center;">About US</p>
+        <div class="section2"> 
+            <div class="left"><h3 style="margin-left: 10px; margin-top: 10px;">About Us</h3>
+                <p style="margin: 10px;">In the United Kingdom, engineering degrees at universities are either three year BEng (Bachelor of Engineering) or four year MEng (Master of Engineering). In many universities it is common to take only one engineering discipline (e.g. aeronautical or civil engineering) although some universities have a general engineering degree. British universities may also offer Doctoral programs as a doctor of philosophy (PhD) or a doctor of engineering (EngD).Engineers can also get additional recognition in the form of becoming Chartered. A chartered engineer is one who has his degree or doctorate has been recognised by a group of professionals such as the IET (Institute of Engineering and Technology), IMechE (Institution of Mechanical Engineers), IChemE (Institution of Chemical Engineers) or ICE (Institution of Civil Engineers). Experience and responsibility enables a further step of recognition by becoming a Fellow of these institutions..</p>
+            </div>
+            <div class="right">
+                <div id="article">
+                    <div class="overlap">
+                        Project-1
+                    </div>
+                    <img src="./assets/p1.jpg" style="margin-top: -50px;" alt="">
+                    <h3>Project-1</h3>
+                </div>
+                <div id="article">
+                    <div class="overlap">
+                        Project-2
+                    </div>
+                    <img src="./assets/p2.jpeg" style="margin-top: -80px;" width="100%" alt="">
+                </div>
+                <div id="article">
+                    <div class="overlap">
+                        Project-3
+                    </div>
+                    <img src="./assets/p3.jpg" style="margin-top: -50px;" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+        <p  id="technologies" style="font-size: 40px; text-align: center;">Technologies Used</p>
+        <div class="section3">
+            <div class="box">
+                <img src="./assets/html.png" alt="">
+                <h3>Introduction to html</h3>
+                <p>Hypertext Markup Language (HTML) is the standard markup language for
+                documents designed to be displayed in a web browser. It can be
+                assisted by technologies such as CSS and scripting languages such as
+                JS.</p>
+                <div class="button">
+                    <a href="html.html"> Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./assets/css.png" alt="">
+                <h3>Introduction to CSS</h3>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for
+                    describing the presentation of a document written in a markup language
+                    like HTML. CSS is a technology of the World wide web.</p>
+                <div class="button">
+                    <a href="css.html"> Read More</a>
+            </div>
+        </div>
+            <div class="box">
+                <img src="./assets/js.png" alt="">
+                <h3>Introduction to Java Script</h3>
+                <p>JavaScript, often reffered as JS, is a high-level programming language. It was originally
+                    designed as a scripting language for websites but became widely
+                    adopted as a general-purpose programming language.</p>
+                <div class="button">
+                    <a href="js.html"> Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./assets/bootstrap.jpeg" alt="">
+                <h3>Introduction to Bootstrap</h3>
+                <p>Bootstrap is a free and open-source CSS framework directed at
+                    responsive, mobile-first front-end web development. It contains CSS-
+                    and (optionally) JavaScript-based design templates.</p>
+                <div class="button">
+                    <a href="bootstrap.html"> Read More</a>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 40px; text-align: center;">Contact</p>
+        <div class="footer" id="contact"><p>Website template for Practical-8 </p>
+            <p>@DIVYAM GUPTA</p>
+            <br>
+            <a href="#top">Back to top</a>
+        </div>
+    </div>
+</body>
+</html>
